@@ -1,5 +1,4 @@
-package objectPassing;
-
+package tenObjectPassing;
 import java.io.Serializable;
 
 public class Message implements Serializable {
@@ -36,4 +35,3 @@ public class Message implements Serializable {
         this.tailor = tailor;
     }
 }
-
