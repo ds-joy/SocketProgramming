@@ -7,6 +7,7 @@ public class Message implements Serializable {
     private String data;
     private int protocolId;
     private boolean tailor;
+    private String acknowledgement = "";
 
     public Message(int header, String data, int protocolId, boolean tailor) {
         this.header = header;
@@ -34,4 +35,13 @@ public class Message implements Serializable {
     public void setTailor(boolean tailor) {
         this.tailor = tailor;
     }
+
+    public void setAcknowledgement(String acknowledgement) {
+        this.acknowledgement = acknowledgement;
+    }
+
+    public String getAcknowledgement() {
+        return acknowledgement;
+    }
 }
+
